@@ -18,7 +18,7 @@ $stock = 3;
 
 <body>
     <h1> Les Mandarines</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis quo voluptatem ullam, magni excepturi inventore iure modi non eveniet illum minima accusamus vel perferendis, provident consectetur quaerat necessitatibus est.</p>
+    <p> Les Mandarines coutent <?= $name ?> </p>
     <span>En stock</span>
 </body>
 
