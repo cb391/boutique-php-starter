@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test PHP</title>
-    </head>
-    <body>
-        <?php 
-
-for ($i = 1; $i < 71; $i= $i++) {
-    $result = 7*$i
-    echo "Tour numéro $result <br>";
+<?php
+for($i = 1; $i <= 10; $i++){
+    echo $i;
 }
-        ?>
-    </body>
+for($i = 1; $i <= 10; $i++){
+    echo $i * 2;
+}
+for($i = 10; $i >= 0; $i--){
+    echo $i;
+}
+for($i = 1; $i <= 10; $i++){
+    echo "7 * ". $i . "=" . ($i * 7);
+}
 
-</html>
+?> 
+

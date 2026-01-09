@@ -1,40 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test PHP</title>
-    </head>
-    <body>
-        <?php 
+<?php 
+$products = [ ];
 
-        $products = [ ];
-       
-        for ($i = 0; $i < 10; $i++) {
-            $products[$i] = [
-            "Produit" => "Produit" .$i, 
-            "price" => rand(90, 100), 
-            "stock" => rand(0, 5),
-            ];
-        }
-
-
-foreach ($products["stock"] as $n) {
-    if ($n === 0) {
-        continue; // Saute le 0, passe au suivant
-    }
+for ($i = 0; $i < 10; $i++) {
+$products[$i] = [
+"Produit" => "Produit" .$i, 
+"price" => rand(90, 100), 
+"stock" => rand(0, 5),
+];
 }
 
-foreach($products["price"] as $m) {
-    if ($m > 100) {
+var_dump(($products));
+
+foreach ($products as $product) {
+    if ($product["stock"] === 0) {
+        continue; // Saute le 0, passe au suivant
+    }
+    if ($product["price"] > 100) {
         break;
-    }  // arrête complètement la boucle
-}             
-                var_dump($products);
-        ?>
+    }  // arrête complètement la boucle            
+echo $product["Produit"];        
+}
 
-
-
-
-    </body>
-
-</html>
-
+?>

@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test PHP</title>
-    </head>
-    <body>
-        <?php 
+<?php 
 $tab = [
     "nom" => "Carla",
     "age" =>"25ans", 
     "city" =>"Grenoble",
     "Job" => "Développeur"
 ];
+?>
 
-foreach ($tab as $key => $value) {
-    echo "<strong>$key </strong> : $value<br>";
-}
-        ?>
-    </body>
+<?php foreach ($tab as $key => $value) : ?>
 
-</html>
+    <strong><?= $key?></strong> : <?= $value ?>
+
+<?php endforeach; ?>
+
+  
