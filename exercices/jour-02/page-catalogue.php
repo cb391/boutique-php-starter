@@ -25,7 +25,7 @@ require_once __DIR__ . '/../app/data.php';
     <p class="prix"><?= $products[1]["Price"] ?> €</p>
     <p class="stock">Stock : <?= $products[1]["Stock"] ?></p>
 </div>
-
+ 
 <div class="Casquette">
     <h2><?= $products[2]["Name"] ?></h2>
     <p class="prix"><?= $products[2]["Price"] ?> €</p>
