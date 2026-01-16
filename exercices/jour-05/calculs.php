@@ -26,7 +26,6 @@ $resultRemise = $pprice * ($pprice * $ppercentage);
 
 echo "Le prix de la TVA est " . calculateVAT ($priceExcludingTax, $rate).".  ";
 
-
 echo  "Le prix TTC est de ". calculateIncludingTax ($priceExcludingTax, $rate).". ";
 
 echo "Le prix remisé est de ". calculateDiscount($price, $percentage).". ";
